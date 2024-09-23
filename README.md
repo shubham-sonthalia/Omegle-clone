@@ -23,7 +23,7 @@ WebRTC
 
 My Understanding: 
 
-WebRTC is a P2P communication architecture used for real-time communication espescially involving transfer of compressed video frames with low latency. Its usecase is in one-on-one gaming, calling, teaching applications, etc. 
+WebRTC is a P2P communication architecture used for real-time communication espescially involving transfer of audio/video/multimedia data streams with low latency. Its usecase is in one-on-one gaming, calling, teaching applications, etc. 
 
 The way it works is that a peer first needs to get its ice candidates from STUN server. A STUN server is a special server that essentially tells you the public IP and port number from where it received the ping (request). The peer use this information to create a speical object that contains information including type of content (audio/video), etc. The peer send this object to a signalling server. the signalling server stores this information and shares this data with second peer who wants to connect with the peer. The second peer also needs to go through the same process of going via the STUN server to get the ice candidates. the second peer also shares the same info to the signalling server. Now that both peers "know" about each other, they can destroy the signalling server and start communicating.
 
