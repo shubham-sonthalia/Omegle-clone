@@ -1,4 +1,4 @@
-## Omegle clone using WebRTC (p2p)
+## An Omegle clone using WebRTC (p2p)
 
 Notes: 
 
