@@ -20,12 +20,21 @@ WebRTC
 14. SDP - Session Description Protocol -> Both peers also share some other stuff other than the ICE candidates. like media type (audio, video, two videos - screen view + camera view). It’s a very long file. Hard to read. 
 15. RTCPeerConnection -> very similar to fetch, websockets in the past. RTCPeerConnection object is a class to hide a lot of complexities and gives back an offer, answer, etc. for communication.
 
+
+My Understanding: 
+
+WebRTC is a P2P communication architecture used for real-time communication espescially involving transfer of compressed video frames with low latency. Its usecase is in one-on-one gaming, calling, teaching applications, etc. 
+
+The way it works is that a peer first needs to get its ice candidates from STUN server. A STUN server is a special server that essentially tells you the public IP and port number from where it received the ping (request). The peer use this information to create a speical object that contains information including type of content (audio/video), etc. The peer send this object to a signalling server. the signalling server stores this information and shares this data with second peer who wants to connect with the peer. The second peer also needs to go through the same process of going via the STUN server to get the ice candidates. the second peer also shares the same info to the signalling server. Now that both peers "know" about each other, they can destroy the signalling server and start communicating.
+
 Open Source webRTC projects to check out - 
 
 1. Janus (used by Unacademy).
 2. Jitsi (GSOC)
 3. MediaSoup (used by most of the companies as an Selective Forwarding Unit = SFU)
-4. Pion (a pure webrtc server in Golang)
+4. Pion (a pure webrtc server in Golang).
+
+
 
 
 Credits for the content and the understanding : Harkirat Singh's cohort presentation and docs. The code is mostly taken from @hkirat/omegle repository => https://github.com/hkirat/omegle
