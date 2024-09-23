@@ -20,5 +20,12 @@ WebRTC
 14. SDP - Session Description Protocol -> Both peers also share some other stuff other than the ICE candidates. like media type (audio, video, two videos - screen view + camera view). It’s a very long file. Hard to read. 
 15. RTCPeerConnection -> very similar to fetch, websockets in the past. RTCPeerConnection object is a class to hide a lot of complexities and gives back an offer, answer, etc. for communication.
 
+Open Source webRTC projects to check out - 
+
+1. Janus (used by Unacademy).
+2. Jitsi (GSOC)
+3. MediaSoup (used by most of the companies as an SFU)
+4. Pion (a pure webrtc server in Golang)
+
 
 Credits for the content and the understanding : Harkirat Singh's cohort presentation and docs. The code is mostly taken from @hkirat/omegle repository => https://github.com/hkirat/omegle
