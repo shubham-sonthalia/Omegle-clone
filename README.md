@@ -1,4 +1,4 @@
-## An Omegle clone using WebRTC (p2p)
+## WebRTC (p2p)
 
 Notes: 
 
@@ -24,7 +24,7 @@ Open Source webRTC projects to check out -
 
 1. Janus (used by Unacademy).
 2. Jitsi (GSOC)
-3. MediaSoup (used by most of the companies as an SFU)
+3. MediaSoup (used by most of the companies as an Selective Forwarding Unit = SFU)
 4. Pion (a pure webrtc server in Golang)
 
 
