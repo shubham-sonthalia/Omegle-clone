@@ -21,6 +21,4 @@ WebRTC
 15. RTCPeerConnection -> very similar to fetch, websockets in the past. RTCPeerConnection object is a class to hide a lot of complexities and gives back an offer, answer, etc. for communication.
 
 
-![Screenshot 2024-09-23 at 8 39 46 AM](https://github.com/user-attachments/assets/92218ed6-47f4-405b-8981-d2e573ef0e7f)
-
 Credits for the content and the understanding : Harkirat Singh's cohort presentation and docs. 
