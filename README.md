@@ -27,6 +27,8 @@ WebRTC is a P2P communication architecture used for real-time communication espe
 
 The way it works is that a peer first needs to get its ice candidates from STUN server. A STUN server is a special server that essentially tells you the public IP and port number from where it received the ping (request). The peer use this information to create a speical object that contains information including type of content (audio/video), etc. The peer send this object to a signalling server. the signalling server stores this information and shares this data with second peer who wants to connect with the peer. The second peer also needs to go through the same process of going via the STUN server to get the ice candidates. the second peer also shares the same info to the signalling server. Now that both peers "know" about each other, they can destroy the signalling server and start communicating.
 
+If the NAT layer of the peer (basically the private network of the peer) is strict and doesn't allow packets from second peer as it says that it opened a certain port to communicate with STUN server and not with this peer. In this case, a TURN server can essentially communicate with the second peer on our behalf. it essentially relays communication betwen the two peers.
+
 Open Source webRTC projects to check out - 
 
 1. Janus (used by Unacademy).
