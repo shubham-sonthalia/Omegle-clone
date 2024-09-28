@@ -40,3 +40,9 @@ Open Source webRTC projects to check out -
 
 
 Credits for the content and the understanding : Harkirat Singh's cohort presentation and docs. The code is mostly taken from @hkirat/omegle repository => https://github.com/hkirat/omegle
+
+
+
+## About this project
+
+Tech Stack: React (Frontend), NodeJS (backend)
